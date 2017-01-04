@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One page portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Cверстать меню сайта (пункты в одну строку меняется цвет при наведении) -->
+<nav>
+    <a class="navbar-brand" href="index.html">Brand</a>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<header id="home">
+    <div class="row">
+        <div class="col-8 col-offset-2">
+            <h1><strong>Hello!</strong> Lorem ipsum dolor sit amet consectetur <strong>adipisicing</strong> elit</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br>
+                Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+    </div>
+    <!-- Отцентровать один div в другом с помощью position: absolute; -->
+    <div class="advertising-absolute"><img src="http://lorempixel.com/728/90/business" alt="Banner 1"></div>
+</header>
+
+<!-- С помощью div-ов сделать блок из двух колонок и наполнить контентом -->
+<section id="about">
+    <div class="row">
+        <div class="col-4 col-offset-2">
+            <h3><i class="fa fa-clock-o"></i> Time</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut ecommodo consequat. Duis aute</p>
+            <h3><i class="fa fa-coffee"></i> Smart</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut ecommodo consequat. Duis aute</p>
+        </div>
+        <div class="col-4">
+            <h3><i class="fa fa-briefcase"></i> Work</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut ecommodo consequat. Duis aute</p>
+            <h3><i class="fa fa-leaf"></i> Vision</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut ecommodo consequat. Duis aute</p>
+        </div>
+    </div>
+</section>
+
+<!-- То же самое с тремя колонками -->
+<section id="skills">
+    <div class="row">
+        <div class="col-8 col-offset-2">
+            <h2>My Skills</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut ecommodo consequat. Duis aute</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 text-center">
+            <h3>HTML / CSS</h3>
+            <div class="pie-chart" data-percent="75">
+                <svg width="174px" height="174px">
+                    <circle fill="none" cx="87" cy="87" r="80" stroke="#3498db" stroke-width="12" />
+                    <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13"
+                          stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
+                </svg>
+            </div>
+        </div>
+        <div class="col-4 text-center">
+            <h3>Javascript</h3>
+            <div class="pie-chart" data-percent="70">
+                <svg width="174px" height="174px">
+                    <circle fill="none" cx="87" cy="87" r="80" stroke="#3498db" stroke-width="12" />
+                    <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13"
+                          stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
+                </svg>
+            </div>
+        </div>
+        <div class="col-4 text-center">
+            <h3>PHP</h3>
+            <div class="pie-chart" data-percent="90">
+                <svg width="174px" height="174px">
+                    <circle fill="none" cx="87" cy="87" r="80" stroke="#3498db" stroke-width="12" />
+                    <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13"
+                          stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- С помощью позиционирования сверстать баннер, который невозможно убрать -->
+<div class="advertising-fixed">
+    <img src="http://lorempixel.com/728/90/city" alt="Banner 2">
+</div>
+</body>
+</html>
