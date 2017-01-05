@@ -303,7 +303,7 @@ section {
         height: 90px;
         top: 15px;
         left: 50%;
-        margin-left: -364px;
+        transform: translateX(-50%);
     }
     .advertising-fixed {
         display: block;
