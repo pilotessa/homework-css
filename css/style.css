@@ -164,19 +164,17 @@ p {
 p:last-child {
     margin-bottom: 0;
 }
-a,
-a:visited {
+a {
     color: #474747;
     text-decoration: none;
 }
-a:hover {
-    color: #3498db;
-    text-decoration:none;
+a:visited {
+    color: #474747;
 }
+a:hover,
 a:focus,
 a:active {
     color: #3498db;
-    text-decoration: none;
 }
 img{
     max-width:100%;
@@ -193,7 +191,7 @@ nav {
     padding: 0 10px;
     background: #fff;
 }
-.navbar-brand {
+nav .navbar-brand {
     display: block;
     padding: 10px 0;
     font-size: 28px;
@@ -210,7 +208,9 @@ nav li a,
 nav li a:visited {
     color: #585858;
 }
-nav li a:hover {
+nav li a:hover,
+nav li a:focus,
+nav li a:active {
     color: #3498db;
 }
 @media (min-width: 768px) {
@@ -218,7 +218,7 @@ nav li a:hover {
         height: 80px;
         line-height: 80px;
     }
-    .navbar-brand {
+    nav .navbar-brand {
         display: inline;
         padding: 0;
         float: left;
