@@ -263,7 +263,7 @@ header {
     position: relative;
     background: url(../img/header-bg.jpg) center center no-repeat;
     background-size: cover;
-    padding: 30px 10px;
+    padding: 30px 0;
 }
 header p {
     text-align: center;
@@ -277,7 +277,7 @@ header p:last-child {
 }
 @media (min-width: 768px) {
     header {
-        padding: 215px 10px;
+        padding: 215px 0;
     }
 }
 
