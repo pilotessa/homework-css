@@ -1,0 +1,229 @@
+/* Generic */
+html {
+    min-height: 100%;
+}
+
+body {
+    color: #474747;
+    text-align: left;
+    min-height: 100%;
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 105px; /* For the fixed banner */
+    }
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #000;
+}
+
+h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #000;
+}
+
+h3 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #000;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: #474747;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #474747;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #3498db;
+}
+
+img {
+    max-width: 100%;
+}
+
+strong {
+    color: #3498db;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 42px;
+    background-color: #3498db;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(39, 110, 157, .7);
+    transition: all .3s;
+}
+
+.btn:visited {
+    color: #fff;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color: #fff;
+    background-color: #358fcc;
+    box-shadow: 0 2px 5px rgba(40, 96, 133, .9);
+}
+
+/* Navigation */
+nav {
+    padding: 0 10px;
+    background: #fff;
+}
+
+nav .navbar-brand {
+    display: block;
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #3498db;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+nav li a,
+nav li a:visited {
+    color: #585858;
+}
+
+nav li a:hover,
+nav li a:focus,
+nav li a:active {
+    color: #3498db;
+}
+
+@media (min-width: 768px) {
+    nav {
+        height: 80px;
+        line-height: 80px;
+    }
+
+    nav .navbar-brand {
+        display: inline;
+        padding: 0;
+        float: left;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav li {
+        float: left;
+        margin-left: 20px;
+    }
+
+    nav li a {
+        display: inline;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+/* Header */
+header {
+    position: relative;
+    background: url(../img/header-bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+header p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+header p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 215px 0;
+    }
+}
+
+/* Section */
+section {
+    padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 75px 0;
+    }
+}
+
+/* Pie Chart */
+.pie-chart svg {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    vertical-align: middle;
+}
+
+.pie-chart:after {
+    content: attr(data-percent) "%";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    line-height: 174px;
+    font-size: 3.125em;
+    font-weight: 300;
+    text-align: center;
+}
