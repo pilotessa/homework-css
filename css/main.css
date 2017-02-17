@@ -9,13 +9,10 @@ body {
     min-height: 100%;
     background: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
-
 }
 
-@media (min-width: 768px) {
-    body {
-        padding-bottom: 105px; /* For the fixed banner */
-    }
+section {
+    padding: 30px 0;
 }
 
 h1 {
@@ -104,9 +101,18 @@ strong {
     box-shadow: 0 2px 5px rgba(40, 96, 133, .9);
 }
 
-/* Navigation */
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 100px; /* For the fixed banner */
+    }
+
+    section {
+        padding: 75px 0;
+    }
+}
+
+/* Header */
 nav {
-    padding: 0 10px;
     background: #fff;
 }
 
@@ -123,13 +129,13 @@ nav .navbar-brand {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 0;
 }
 
 nav li a {
     display: block;
     padding: 10px 0;
-    font-size: 25px;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -141,6 +147,11 @@ nav li a:visited {
 nav li a:hover,
 nav li a:focus,
 nav li a:active {
+    color: #585858;
+    background-color: #f8f8f8;
+}
+
+nav li.active a {
     color: #3498db;
 }
 
@@ -148,40 +159,42 @@ nav li a:active {
     nav {
         height: 80px;
         line-height: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     nav .navbar-brand {
-        display: inline;
+        display: block;
         padding: 0;
         float: left;
     }
 
     nav ul {
         float: right;
+        margin-right: -10px;
+        padding: 0;
     }
 
     nav li {
         float: left;
-        margin-left: 20px;
     }
 
     nav li a {
-        display: inline;
-        padding: 0;
+        display: block;
+        padding: 0 10px;
         font-size: 15px;
         font-weight: 300;
     }
 }
 
-/* Header */
-header {
+/* Home */
+.home {
     position: relative;
     background: url(../img/header-bg.jpg) center center no-repeat;
     background-size: cover;
-    padding: 30px 0;
 }
 
-header p {
+.home p {
     text-align: center;
     font-size: 15px;
     line-height: 1.3;
@@ -189,24 +202,13 @@ header p {
     margin-bottom: 15px;
 }
 
-header p:last-child {
+.home p:last-child {
     margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-    header {
+    .home {
         padding: 215px 0;
-    }
-}
-
-/* Section */
-section {
-    padding: 30px 0;
-}
-
-@media (min-width: 768px) {
-    section {
-        padding: 75px 0;
     }
 }
 
