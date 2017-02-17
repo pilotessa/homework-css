@@ -1,8 +1,4 @@
-/* Generic */
-html {
-    min-height: 100%;
-}
-
+/* Layout */
 body {
     color: #474747;
     text-align: left;
@@ -12,37 +8,49 @@ body {
 }
 
 section {
-    padding: 30px 0;
+    padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 75px 0 15px 0;
+    }
+}
+
+/* Typography */
+html {
+    line-height: 1.3;
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
-    line-height: 1.3;
     color: #000;
 }
 
 h2 {
+    margin-top: 0;
     margin-bottom: 30px;
     text-align: center;
     font-size: 28px;
     font-weight: 700;
-    line-height: 1.3;
     color: #000;
 }
 
 h3 {
+    margin-top: 0;
     margin-bottom: 30px;
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-    line-height: 1.3;
     color: #000;
 }
 
 p {
+    margin-top: 0;
     margin-bottom: 30px;
     font-size: 16px;
 }
@@ -80,9 +88,11 @@ strong {
 
 .btn {
     display: inline-block;
-    padding: 18px 42px;
+    padding: 15px 42px;
     background-color: #3498db;
     font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
     color: #fff;
     cursor: pointer;
     box-shadow: 0 2px 2px rgba(39, 110, 157, .7);
@@ -101,29 +111,21 @@ strong {
     box-shadow: 0 2px 5px rgba(40, 96, 133, .9);
 }
 
-@media (min-width: 768px) {
-    body {
-        padding-bottom: 100px; /* For the fixed banner */
-    }
-
-    section {
-        padding: 75px 0;
-    }
-}
-
 /* Header */
 nav {
     background: #fff;
+    text-align: center;
 }
 
 nav .navbar-brand {
-    display: block;
-    padding: 10px 0;
+    display: inline-block;
+    padding: 10px 0 10px 45px;
     font-size: 28px;
     font-weight: 700;
     color: #3498db;
     text-decoration: none;
     text-align: center;
+    background: url(../img/brand.png) left center no-repeat;
 }
 
 nav ul {
@@ -134,9 +136,9 @@ nav ul {
 
 nav li a {
     display: block;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 400;
-    text-align: center;
 }
 
 nav li a,
@@ -165,7 +167,8 @@ nav li.active a {
 
     nav .navbar-brand {
         display: block;
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
         float: left;
     }
 
@@ -190,14 +193,16 @@ nav li.active a {
 /* Home */
 .home {
     position: relative;
-    background: url(../img/header-bg.jpg) center center no-repeat;
+    background: url(../img/home-bg.jpg) center center no-repeat;
     background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .home p {
     text-align: center;
     font-size: 15px;
-    line-height: 1.3;
     color: #000;
     margin-bottom: 15px;
 }
@@ -208,7 +213,9 @@ nav li.active a {
 
 @media (min-width: 768px) {
     .home {
-        padding: 215px 0;
+        padding-top: 210px;
+        padding-bottom: 150px;
+        margin-bottom: 75px;
     }
 }
 
@@ -225,7 +232,8 @@ nav li.active a {
     width: 100%;
     left: 0;
     line-height: 174px;
-    font-size: 3.125em;
+    font-size: 50px;
+    color: #000;
     font-weight: 300;
     text-align: center;
 }

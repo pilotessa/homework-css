@@ -27,7 +27,7 @@
 .col-11,
 .col-12 {
     position: relative;
-    padding: 0 10px 30px;
+    padding: 0 10px 40px;
 }
 
 @media (min-width: 768px) {
@@ -44,6 +44,7 @@
     .col-11,
     .col-12 {
         float: left;
+        padding-bottom: 60px;
     }
 
     .col-1 {
